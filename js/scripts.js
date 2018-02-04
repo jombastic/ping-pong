@@ -20,6 +20,8 @@ $(function() {
     numbers.forEach(function(number) {
       if (number % 3 === 0) {
         $("#result ul").prepend("<li>ping</li>");
+      } else if (number % 5 === 0) {
+        $("#result ul").prepend("<li>pong</li>");
       } else {
         $("#result ul").prepend("<li>" + number + "</li>");
       }
