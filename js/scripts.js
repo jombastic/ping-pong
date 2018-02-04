@@ -17,11 +17,14 @@ $(function() {
 
     //displays every number to the user in a list
     $("#result").show();
+    $("#result ul").empty();
     numbers.forEach(function(number) {
-      if (number % 3 === 0) {
+      if ((number % 3 === 0) && (number % 5 !== 0)) {
         $("#result ul").prepend("<li>ping</li>");
-      } else if (number % 5 === 0) {
+      } else if ((number % 5 === 0) && (number % 3 !== 0)) {
         $("#result ul").prepend("<li>pong</li>");
+      } else if ((number % 3 === 0) && (number % 5 === 0)) {
+        $("#result ul").prepend("<li>ping pong</li>");
       } else {
         $("#result ul").prepend("<li>" + number + "</li>");
       }
