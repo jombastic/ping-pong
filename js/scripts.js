@@ -18,7 +18,11 @@ $(function() {
     //displays every number to the user in a list
     $("#result").show();
     numbers.forEach(function(number) {
-      $("#result ul").prepend("<li>" + number + "</li>");
+      if (number % 3 === 0) {
+        $("#result ul").prepend("<li>ping</li>");
+      } else {
+        $("#result ul").prepend("<li>" + number + "</li>");
+      }
     });
   });
 });
