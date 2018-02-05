@@ -16,7 +16,6 @@ $(function() {
     var result = numbers(userInput);
 
     //displays every number to the user in a list
-    $("#result").show();
     $("#result ul").empty();
 
     if (userInput > 250) {

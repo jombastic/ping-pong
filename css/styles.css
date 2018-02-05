@@ -1,3 +1,75 @@
+body {
+  background-image: url("../img/ping-pong.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 100%;
+  background-color: #252525;
+}
+
+.container {
+  width: 70%;
+}
+.borders {
+  border-radius: 14px 14px 14px 14px;
+  -moz-border-radius: 14px 14px 14px 14px;
+  -webkit-border-radius: 14px 14px 14px 14px;
+}
+
+.blueShadow {
+  -webkit-box-shadow:inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(21,101,192,0.4);
+  -moz-box-shadow:inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(21,101,192,0.4);
+  box-shadow:inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(21,101,192,0.4);
+}
+
+.redShadow {
+  -webkit-box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(198,40,40,0.4);
+  -moz-box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(198,40,40,0.4);
+  box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(198,40,40,0.4);
+}
+
+#introduction {
+  background-color: rgba(21,101,192,0.6);
+  height: 35vh;
+  padding-left: 2%;
+  padding-top: 1%;
+  margin-top: 10vh;
+  margin-bottom: 7vh;
+}
+
+#introduction h1 {
+  font-size: 5vw;
+  text-align: center;
+  padding-bottom: 3vh;
+  color: #999999;
+}
+
+#introduction p {
+  color: #ffffff;
+}
+
+#number,
 #result {
-  display: none;
+  background-color: rgba(198,40,40,0.71);
+}
+
+#number {
+  height: 100px;
+  border-style: none;
+  margin-top: 10vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#result {
+  height: 200px;
+  width: 70%;
+  overflow: scroll;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  list-style-type: none;
 }

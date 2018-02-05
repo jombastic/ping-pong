@@ -7,20 +7,35 @@
   </head>
   <body>
     <div class="container">
-      <form>
+      <div id="introduction" class="blueShadow borders">
         <h1>Ping Pong</h1>
-        <div class="form-group">
-          <label for="number">Enter a number</label>
-          <input type="number" class="form-control" id="number" />
-        </div>
-        <button type="submit" class="btn">Submit</button>
-      </form>
-
-      <div id="result">
-        <ul>
-
-        </ul>
+        <p>
+          Let's play! Enter a number and watch what happens. Every number leading up to it will be displayed! But not so fast... If any number smaller than that is divisible by 3, PING! And also if any number smaller than that is divisible by 5, PONG! And furthermore, if any number smaller than that is divisible by 3 AND 5, PING PONG!!!
+        </p>
       </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label class="sr-only" for="number">Enter a number</label>
+              <input type="number" class="form-control borders" id="number" placeholder="Enter number here" />
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="result" class="borders">
+            <ul class="text-center">
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        Made by Slavcho Mitrov. Check out the Github page for more info.
+      </footer>
     </div>
 
     <script src="js/jquery-3.2.1.js"></script>
