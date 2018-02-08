@@ -9,6 +9,10 @@ var numbers = function(number) {
 };
 
 $(function() {
+  $("#number").click(function() {
+    $(this).addClass("redBlur");
+  });
+
   $("form").submit(function(event) {
     event.preventDefault();
 
@@ -17,6 +21,7 @@ $(function() {
 
     //displays every number to the user in a list
     $("#result ul").empty();
+    $("#result").addClass("redBlur");
 
     if (userInput > 250) {
       var confirmation = confirm("Entering a number bigger than 250 may cause the page to crash. Are you sure you want to continue?");
@@ -25,11 +30,11 @@ $(function() {
     if (confirmation || (userInput <= 250)) {
       result.forEach(function(number) {
         if ((number % 3 === 0) && (number % 5 !== 0)) {
-          $("#result ul").prepend("<li>ping</li>");
+          $("#result ul").prepend("<li class='white'>ping</li>");
         } else if ((number % 5 === 0) && (number % 3 !== 0)) {
-          $("#result ul").prepend("<li>pong</li>");
+          $("#result ul").prepend("<li class='blue'>pong</li>");
         } else if ((number % 3 === 0) && (number % 5 === 0)) {
-          $("#result ul").prepend("<li>ping pong</li>");
+          $("#result ul").prepend("<li class='yellow'>ping pong</li>");
         } else {
           $("#result ul").prepend("<li>" + number + "</li>");
         }

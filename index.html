@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Dhurjati|Open+Sans" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <title>Ping Pong</title>
@@ -19,24 +20,24 @@
           <form>
             <div class="form-group">
               <label class="sr-only" for="number">Enter a number</label>
-              <input type="number" class="form-control borders" id="number" placeholder="Enter number here" />
+              <input type="number" class="form-control borders redShadow" id="number" placeholder="Enter number here" />
             </div>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn" id="ballButton">Submit</button>
           </form>
         </div>
         <div class="col-md-6">
-          <div id="result" class="borders">
+          <div id="result" class="borders redShadow">
             <ul class="text-center">
 
             </ul>
           </div>
         </div>
       </div>
-
-      <footer>
-        Made by Slavcho Mitrov. Check out the Github page for more info.
-      </footer>
     </div>
+
+    <footer>
+      Made by <strong>Slavcho Mitrov</strong>. Check out the <a href="https://github.com/jombastic/ping-pong">Github page</a> for more info.
+    </footer>
 
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>

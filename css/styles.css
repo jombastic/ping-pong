@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
   background-image: url("../img/ping-pong.png");
   background-position: center top;
@@ -5,10 +13,13 @@ body {
   background-attachment: fixed;
   background-size: auto 100%;
   background-color: #252525;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   width: 70%;
+  flex: 1 0 auto;
 }
 .borders {
   border-radius: 14px 14px 14px 14px;
@@ -23,6 +34,12 @@ body {
 }
 
 .redShadow {
+  -webkit-box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1);
+  -moz-box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1);
+  box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1);
+}
+
+.redBlur {
   -webkit-box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(198,40,40,0.4);
   -moz-box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(198,40,40,0.4);
   box-shadow: inset 0px 0px 100px 10px rgba(37,37,37,1), 1px -2px 11px 7px rgba(198,40,40,0.4);
@@ -30,46 +47,98 @@ body {
 
 #introduction {
   background-color: rgba(21,101,192,0.6);
-  height: 35vh;
-  padding-left: 2%;
-  padding-top: 1%;
+  height: 20vw;
+  width: 100%;
+  /*padding-left: 2%;*/
+  /*padding-top: 1%;*/
   margin-top: 10vh;
   margin-bottom: 7vh;
 }
 
 #introduction h1 {
-  font-size: 5vw;
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 8vw;
+  word-spacing: 15px;
   text-align: center;
-  padding-bottom: 3vh;
-  color: #999999;
+  padding-bottom: 1vh;
+  color: #ffffff;
 }
 
 #introduction p {
-  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.3vw;
+  word-spacing: 8px;
+  padding: 0 3% 0 3%;
+  color: #999999;
 }
 
 #number,
 #result {
+  font-family: 'Dhurjati', sans-serif;
+  font-size: 30px;
   background-color: rgba(198,40,40,0.71);
+  color: #999999;
 }
 
 #number {
   height: 100px;
   border-style: none;
-  margin-top: 10vh;
   width: 80%;
+  margin-top: 1vh;
   margin-left: auto;
   margin-right: auto;
 }
+
+#ballButton {
+  font-weight: bold;
+  margin-left: 10%;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  -webkit-box-shadow: inset 27px 28px 45px -1px rgba(0,0,0,0.6);
+  -moz-box-shadow: inset 27px 28px 45px -1px rgba(0,0,0,0.6);
+  box-shadow: inset 27px 28px 45px -1px rgba(0,0,0,0.6);
+  border: 0;
+}
+
+#ballButton:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 
 #result {
   height: 200px;
   width: 70%;
-  overflow: scroll;
+  overflow-y: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
+.blue {
+  color: #1565c0;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.yellow {
+  color: #c08f15;
+}
+
 ul {
   list-style-type: none;
+  text-transform: uppercase;
+}
+
+footer {
+  font-size: 1.3em;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  background-color: #999999;
 }
