@@ -107,6 +107,7 @@ body {
 
 #ballButton:focus {
   outline: none;
+  text-decoration: underline;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
