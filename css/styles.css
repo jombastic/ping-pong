@@ -62,6 +62,7 @@ body {
   font-size: 8vw;
   word-spacing: 15px;
   text-align: center;
+  text-shadow: 6px 4px 3px rgba(198, 40, 40, 0.63);
   padding-bottom: 1vh;
   color: #ffffff;
 }
@@ -193,4 +194,54 @@ footer {
     padding-top: 2vh;
     padding-bottom: 2vh;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 97%;
+  }
+
+  #introduction {
+    height: 57vw;
+    padding: 0;
+  }
+
+  #introduction h1 {
+    font-size: 19vw;
+  }
+
+  #introduction p {
+    font-size: 3.2vw;
+    word-spacing: 8px;
+    padding: 0 2% 0 2%;
+    color: #999999;
+  }
+
+  #number,
+  #result {
+    font-size: 90px;
+    text-align: center;
+    height: 350px;
+    width: 100%;
+  }
+
+  #ballButton {
+    height: 100px;
+    width: 100px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  #number {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  footer {
+    font-size: 2em;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+}
 }
