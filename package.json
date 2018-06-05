@@ -34,7 +34,8 @@
     "karma-cli": "^1.0.1",
     "karma-webpack": "^2.0.13",
     "karma-jquery": "^0.2.2",
-    "karma-jasmine-html-reporter": "^0.2.2"
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "file-loader": ""
   },
   "description": ""
 }
