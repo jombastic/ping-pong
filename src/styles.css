@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-  background-image: url("../img/ping-pong.png");
+  background-image: url("./img/ping-pong.png");
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -122,15 +122,15 @@ body {
   margin-right: auto;
 }
 
-.blue {
+.pong {
   color: #1565c0;
 }
 
-.white {
+.ping {
   color: #ffffff;
 }
 
-.yellow {
+.ping-pong {
   color: #c08f15;
 }
 
@@ -244,5 +244,4 @@ footer {
     padding-top: 3vh;
     padding-bottom: 3vh;
   }
-}
 }
