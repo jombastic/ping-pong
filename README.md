@@ -7,7 +7,7 @@
 ## Description
 
 A webpage created with HTML, CSS and JavaScript where a user can submit a number. After that the page displays all the numbers leading up to it. Every number that is divisible by 3 is displayed as "PING", every number divisible by 5 as "PONG" and every number divisible by 5 AND 3 as "PING PONG".
-
+The files are bundled with webpack and several dependencies, including eslint for syntax checking, live development server, jasmine and karma used for code testing and istanbul for code coverage.
 
 ### Specs
 | Spec | Input | Output |
