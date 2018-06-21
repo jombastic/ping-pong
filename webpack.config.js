@@ -25,6 +25,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$|\.jsx$/,
+        use: {
+          loader: 'istanbul-instrumenter-loader',
+          options: { esModules: true }
+        },
+        enforce: 'post',
+        exclude: /node_modules|\.spec\.js$/,
+      },
+      {
         test: /\.css$/,
         use: [
           'style-loader',
